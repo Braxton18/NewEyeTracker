@@ -1,0 +1,9 @@
+#heatmapContainer{
+    position: relative; width: 800px; height: 600px; margin-top: 20px}
+#backgroundImage{
+    position: absolute; width: 800px; height: 600px
+}
+#heatmapCanvas{
+    position: absolute
+    
+}

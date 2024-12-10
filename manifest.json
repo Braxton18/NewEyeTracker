@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Eye Tracker Heatmap",
+    "version": "1.1",
+    "description": "Generate heatmaps from gaze data with a live background.",
+    "permissions": ["storage", "activeTab", "tabCapture", "tabs", "scripting"],
+    "host_permissions": ["<all_urls>"],
+    "content_security_policy":{
+        "extension_pages": "script-src 'self'; object-src 'self';"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "images/icon.png",
+        "48": "images/icon.png",
+        "128": "images/icon.png"
+      }
+    },
+    "background": {
+      "service_worker": "background.js"
+    }
+  }
